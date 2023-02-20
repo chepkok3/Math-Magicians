@@ -130,7 +130,7 @@ You can deploy this project by:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **React components.**
+- [ ] **More UI with pages.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,6 +156,6 @@ I would like to thank the whole Microverse community for their help and contribu
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/chepkok3/Math-Magicians/blob/set-up/MIT%20License) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
