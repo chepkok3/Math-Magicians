@@ -1,0 +1,49 @@
+body {
+  background-color: white;
+}
+
+.calculator {
+  width: 60%;
+  height: 35rem;
+  margin: 8rem 16rem;
+}
+
+#close {
+  height: 18%;
+  width: 80%;
+  background-color: rgba(128, 128, 128, 59.7%);
+  text-align: right;
+  font-size: xx-large;
+  color: white;
+  box-sizing: border-box;
+}
+
+.input {
+  display: flex;
+  height: 60%;
+  width: 80%;
+}
+
+.digits {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.digits > * {
+  border: 1px solid gainsboro;
+  outline: none;
+  font-size: x-large;
+}
+
+.digits :nth-child(4n) {
+  background-color: orange;
+}
+
+.digits :last-child {
+  background-color: orange;
+}
+
+.digits :nth-child(17) {
+  grid-column: span 2;
+}
