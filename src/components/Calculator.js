@@ -1,40 +1,83 @@
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 import './Calculator.css';
 
 function Calculator() {
-  const buttons = [
-    'AC',
-    '+/-',
-    '%',
-    '/',
-    7,
-    8,
-    9,
-    'x',
-    4,
-    5,
-    6,
-    '-',
-    1,
-    2,
-    3,
-    '+',
-    0,
-    '.',
-    '=',
-  ];
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  const renderButton = (button) => (
-    <button key={button} type="button">
-      {button}
-    </button>
-  );
-
+  const handleClick = (event) => {
+    setState(calculate(state, event.target.textContent));
+  };
   return (
     <section className="calculator">
-      <input type="text" value="0" disabled id="close" />
-      <section className="input">
-        <article className="digits">{buttons.map(renderButton)}</article>
-      </section>
+      <div className="container">
+        <input
+          className="input"
+          type="text"
+          value={state.next || state.total || '0'}
+        />
+        <button type="button" className="button" onClick={handleClick}>
+          AC
+        </button>
+        <button type="button" className="button" onClick={handleClick}>
+          +/-
+        </button>
+        <button type="button" className="button" onClick={handleClick}>
+          %
+        </button>
+        <button type="button" className="button operator" onClick={handleClick}>
+          ÷
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          7
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          8
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          9
+        </button>
+        <button type="button" className="button operator" onClick={handleClick}>
+          x
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          4
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          5
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          6
+        </button>
+        <button type="button" className="button operator" onClick={handleClick}>
+          -
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          1
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          2
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          3
+        </button>
+        <button type="button" className="button operator" onClick={handleClick}>
+          +
+        </button>
+        <button type="button" className="button zero" onClick={handleClick}>
+          0
+        </button>
+        <button type="button" className="button number" onClick={handleClick}>
+          .
+        </button>
+        <button type="button" className="button operator" onClick={handleClick}>
+          =
+        </button>
+      </div>
     </section>
   );
 }
