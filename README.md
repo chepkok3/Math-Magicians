@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not yet added.
+- [Live Demo Link](https://cheery-boba-76ef88.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
