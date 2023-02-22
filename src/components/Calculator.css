@@ -3,47 +3,41 @@ body {
 }
 
 .calculator {
-  width: 60%;
+  max-width: 960px;
   height: 35rem;
-  margin: 8rem 16rem;
-}
-
-#close {
-  height: 18%;
-  width: 80%;
-  background-color: rgba(128, 128, 128, 59.7%);
-  text-align: right;
-  font-size: xx-large;
-  color: white;
-  box-sizing: border-box;
+  margin: 8rem auto;
 }
 
 .input {
-  display: flex;
-  height: 60%;
-  width: 80%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: end;
+  padding: 0.5rem;
+  font-size: 4rem;
+  background-color: rgba(128, 128, 128, 59.7%);
 }
 
-.digits {
-  width: 100%;
+.container {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.digits > * {
-  border: 1px solid gainsboro;
-  outline: none;
-  font-size: x-large;
+.button {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
-.digits :nth-child(4n) {
+.operator {
   background-color: orange;
 }
 
-.digits :last-child {
-  background-color: orange;
-}
-
-.digits :nth-child(17) {
+.zero {
   grid-column: span 2;
+  align-items: center;
+  padding-left: 1rem;
 }
