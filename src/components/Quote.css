@@ -1,0 +1,12 @@
+.quote-body {
+  background: linear-gradient(to right, #5a5eb5, #7b77c9);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'Segoe UI', sans-serif;
+}
