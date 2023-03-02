@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://deploy-preview-6--cheery-boba-76ef88.netlify.app/)
+- [Live Demo Link](https://maths-magicigians.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
