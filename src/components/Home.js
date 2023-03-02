@@ -20,7 +20,7 @@ const HomeTitle = styled.h2`
   padding-bottom: 1rem;
 `;
 
-const HomeText = styled.p`
+const HomeText = styled.div`
   margin-top: 10px;
   margin: 12px;
   padding: 1rem;
